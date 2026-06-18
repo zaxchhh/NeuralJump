@@ -1,0 +1,6 @@
+{
+  "name": "NeuralJump",
+  "description": "An 8-bit retro side-scroller controlled by Teachable Machine gesture recognition.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

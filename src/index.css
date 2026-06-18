@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-retro: "Outfit", sans-serif;
+  
+  --color-bento-border: #E6DFD3; /* Soft noble Cream border */
+  --color-bento-green: #0B2545;  /* Deep Navy Blue primary */
+  --color-bento-bg: #FAF7F2;     /* Warm luxurious cream background */
+  --color-bento-card: #FFFFFF;  /* High contrast pure white cards */
+  --color-bento-card-light: #FAF8F5; /* secondary card cream */
+}
+
+/* Custom modern minimalist navy and cream overrides */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bento-bg);
+  color: #1E293B; /* Deep Slate Navy text */
+}
+
+.retro-title {
+  font-family: var(--font-display);
+  text-shadow: none !important;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.bento-grid-item {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-bento-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(11, 37, 69, 0.03);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-grid-item:hover {
+  border-color: var(--color-bento-green);
+  box-shadow: 0 8px 24px rgba(11, 37, 69, 0.08);
+}
+
+kbd {
+  box-shadow: 0 1.5px 0 #CBD5E1;
+  border-radius: 4px;
+}
+
+/* Custom scrollbar matching elegant navy/cream look */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bento-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #E6DFD3;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-bento-green);
+}
